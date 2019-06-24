@@ -48,3 +48,10 @@ void Graph::read_File(int number_edges)
 }
 
 
+
+void Graph::degree_printAll()
+{
+    for(int i=0;i<nodes_edges.size();i++)
+            cout<<nodes_edges[i]<<endl;
+}
+
