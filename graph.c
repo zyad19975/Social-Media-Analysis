@@ -55,3 +55,22 @@ void Graph::degree_printAll()
             cout<<nodes_edges[i]<<endl;
 }
 
+void Graph::print_adjacencyList()
+{
+    
+    
+    for(int i=0;i<adj_list.size();i++)
+    {
+        list<pair<int,int> >::iterator it;
+
+        for(it=adj_list[i].begin();it!=adj_list[i].end();it++)
+        {
+
+                cout<<i<<"=="<<it->second<<"==>"<<it->first<<endl;
+        }
+    }
+
+    
+}
+
+
