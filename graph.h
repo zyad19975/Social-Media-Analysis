@@ -2,13 +2,16 @@
 #include <list>
 #include <vector>
 #include <fstream>
-
+#include <queue>
+#include <iomanip>
 using namespace std;
 
 
 #ifndef GRAPH_H
 #define GRAPH_H
 
+
+#define INFINITY 1000
 
 
 
@@ -30,6 +33,7 @@ public:
     void read_File(int);
     void degree_printAll();
     void print_adjacencyList();
+    void shortest_Path(int,vector<int>&,vector<int>&);
     void closenessCentrality_printAll();
     void betwenessCentrality_printAll();
 
