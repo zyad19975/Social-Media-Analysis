@@ -22,8 +22,6 @@ int main()
     Graph myGraph(total_nodes);
     
     
-    
-    
     myGraph.read_File(myFile);
     //myGraph.read_File(total_edges);
     
@@ -34,9 +32,6 @@ int main()
 
     cout<<"Closeness-Centriality"<<endl;
     myGraph.closenessCentrality_printAll();
-
-
-
 
 
 
